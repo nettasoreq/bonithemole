@@ -1,0 +1,53 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Alef&display=swap");
+body {background-color: #744913;font-family: Alef, sans-serif;}
+iframe { border: 0px; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%; }
+#gameArea { overflow: hidden; position: relative; height: 80vh; width: 90vw; margin: 0px auto; }
+.hide { display: none; }
+header {width: 100%;height: 68px;position: relative;display: block;direction: rtl;z-index: 3;box-shadow: rgb(88, 52, 38) 0px 6px 20px;background-color: rgb(216, 205, 162);border-radius: 42px;}
+header > a { text-decoration: none; }
+header > a > p { font-family: Alef, sans-serif; font-size: 14pt; font-weight: 600; position: relative; top: -15px; color: rgb(216, 205, 162); display: inline-block; direction: rtl; }
+#logo {width: auto;height: 45px;padding: 5px 15px;direction: rtl;position: relative;top: 4px;margin-right: 2%;}
+nav { margin-top: -70px; margin-left: 10px; direction: rtl; }
+nav ul { list-style: none; direction: rtl; }
+nav ul li { display: inline-block; float: left; direction: rtl; }
+nav ul li a {display: block;color: rgb(216, 205, 162);text-align: center;padding: 7px 27px;font-weight: 500;font-size: 14pt;font-family: Alef, sans-serif;direction: rtl;text-decoration: none;position: relative;top: -15px;left: 1em;background-color: rgb(166, 124, 73);border-radius: 38px;margin-left: 20px;box-shadow: rgb(116 73 19) 0px 8px 22px 2PX;}
+nav ul li a:hover {cursor: pointer;font-family: Alef, sans-serif;direction: rtl;text-decoration: none;background-color: rgb(116, 73, 19);border-radius: 35px;box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;box-shadow: rgb(116 73 19 / 46%) 0px 4px 22px 2px;}
+.popUp {background-color: rgb(249, 237, 229);position: fixed;top: 60px;z-index: 4;text-align: center;width: 700px;border-radius: 20px;padding: 10px 10px 25px;right: 0px;left: 0px;margin-right: auto;margin-left: auto;direction: rtl;color: rgb(53, 21, 5);box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 12px;box-shadow: rgb(116 73 19 / 46%) 0px 4px 22px 2px;}
+.popUp > p { font-size: 14pt; position: relative; }
+#x { width: 27px; height: 27px; position: absolute; right: 20px; top: 12px; cursor: pointer; }
+#x:hover {width: 50px;box-shadow: rgb(116 73 19 / 29%) 0px 4px 22px 0px;height: 50px;animation: 0.3s ease 0s 1 normal none running xHover;border-radius: 57px;}
+@keyframes xHover { 
+  0% { width: 27px; height: 27px; }
+  100% { width: 50px; height: 50px; }
+}
+.popUp a img { width: 100px; height: auto; position: relative; top: -10px; }
+.popUp a p { position: relative; font-size: 12pt; top: -10px; }
+.popUp h1 { position: relative; font-size: 32pt; }
+#course1, #us span { font-weight: bold; top: -10px; }
+#how { top: -20px; }
+#course2 { top: -20px; }
+#howToPlayDiv p { font-weight: bold; font-size: 14pt; position: relative; clear: both; }
+#howToPlayDiv > img { position: relative; clear: both; top: -10px; width: 350px; height: auto; right: 150px; }
+.key { position: relative; top: 20px; left: 290px; margin-left: 18px; display: inline-block; float: left; }
+#space { position: relative; top: 7px; right: 65px; }
+.bounceInDown { animation-name: bounceInDown; animation-duration: 1s; animation-fill-mode: both; }
+@-webkit-keyframes bounceInDown { 
+  0%, 60%, 75%, 90%, 100% { transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% { opacity: 0; transform: translate3d(0px, -3000px, 0px); }
+  60% { opacity: 1; transform: translate3d(0px, 25px, 0px); }
+  75% { transform: translate3d(0px, -10px, 0px); }
+  90% { transform: translate3d(0px, 5px, 0px); }
+  100% { transform: none; }
+}
+@keyframes removeByOpacity { 
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes bounceInDown { 
+  0%, 60%, 75%, 90%, 100% { transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  0% { opacity: 1; transform: translate3d(0px, -3000px, 0px); }
+  60% { opacity: 1; transform: translate3d(0px, 25px, 0px); }
+  75% { transform: translate3d(0px, -10px, 0px); }
+  90% { transform: translate3d(0px, 5px, 0px); }
+  100% { transform: none; }
+}

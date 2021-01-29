@@ -9194,8 +9194,8 @@ if (reversed == null) { reversed = false; }
 		
 		
 		
-		initL();//הטעמת סאונד בקובץ אנימייט לוקאלי
-		//initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
+		//initL();//הטעמת סאונד בקובץ אנימייט לוקאלי
+		initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
 		
 		
 		/////////////////////////////////////
@@ -9507,7 +9507,7 @@ if (reversed == null) { reversed = false; }
 					],
 					[
 						["David Ben-Gurion was", lib.engQ3, 0, 0, false, 30],
-						["the primary national founder of the State of Israel", "text", false, true],
+						["the first national founder of the State of Israel", "text", false, true],
 						["a Jewish poet who wrote primarily in Hebrew", "text", false, false],
 						["American film director, producer, and screenwriter", "text", false, false]
 					],
@@ -9520,7 +9520,7 @@ if (reversed == null) { reversed = false; }
 						["That is a brown leather coat", "text", false, true]
 					],
 					[
-						["The Brazilian flag is bright green with a yellow diamond in the center filled with a blue globe", "", 0, 0, false, 30],
+						["The Brazilian flag is bright green with a yellow diamond in the center With a blue globe in it", "", 0, 0, false, 30],
 						[lib.engQ5_0, "img", false, false],
 						[lib.engQ5_1, "img", false, false],
 						[lib.engQ5_2, "img", false, false],
@@ -9535,7 +9535,7 @@ if (reversed == null) { reversed = false; }
 						["am", "text", false, false]
 					],
 					[
-						["if i want my food to be warm quickly, where should i put it", "", 0, 0, false, 20],
+						["if i want my food to be hot quickly, where should i put it", "", 0, 0, false, 20],
 						[lib.engQ7_0, "img", false, true],
 						["in the refrigerator", "text", false, false],
 						["in the closet", "text", false, false],
@@ -9550,7 +9550,7 @@ if (reversed == null) { reversed = false; }
 					],
 					[
 						["I was very happy _____ in India. I really miss being there", "", 0, 0, false, 20],
-						["to have lived", "text", false, false],
+						["to has lived", "text", false, false],
 						["to live", "text", false, true],
 						["to be lived", "text", false, false],
 						["to be living", "text", false, false]
@@ -10538,45 +10538,45 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/apollo148722_640.jpg?1611906096346", id:"apollo148722_640"},
-		{src:"images/Bitmap12.png?1611906096346", id:"Bitmap12"},
-		{src:"images/Bitmap13.png?1611906096346", id:"Bitmap13"},
-		{src:"images/Bitmap14.png?1611906096346", id:"Bitmap14"},
-		{src:"images/Bitmap15.png?1611906096346", id:"Bitmap15"},
-		{src:"images/Bitmap16.png?1611906096346", id:"Bitmap16"},
-		{src:"images/Bitmap17.png?1611906096346", id:"Bitmap17"},
-		{src:"images/Bitmap18.png?1611906096346", id:"Bitmap18"},
-		{src:"images/Bitmap20.png?1611906096346", id:"Bitmap20"},
-		{src:"images/Bitmap21.png?1611906096346", id:"Bitmap21"},
-		{src:"images/Bitmap22.png?1611906096346", id:"Bitmap22"},
-		{src:"images/Bitmap23.png?1611906096346", id:"Bitmap23"},
-		{src:"images/Bitmap28.png?1611906096346", id:"Bitmap28"},
-		{src:"images/Bitmap29.png?1611906096346", id:"Bitmap29"},
-		{src:"images/Bitmap35.png?1611906096346", id:"Bitmap35"},
-		{src:"images/Bitmap39.png?1611906096346", id:"Bitmap39"},
-		{src:"images/Bitmap40.png?1611906096346", id:"Bitmap40"},
-		{src:"images/Bitmap41.png?1611906096346", id:"Bitmap41"},
-		{src:"images/Bitmap42.png?1611906096346", id:"Bitmap42"},
-		{src:"images/Bitmap43.png?1611906096346", id:"Bitmap43"},
-		{src:"images/Bitmap44.png?1611906096346", id:"Bitmap44"},
-		{src:"images/Bitmap45.png?1611906096346", id:"Bitmap45"},
-		{src:"images/Bitmap46.png?1611906096346", id:"Bitmap46"},
-		{src:"images/Bitmap47.png?1611906096346", id:"Bitmap47"},
-		{src:"images/flag40724_640.png?1611906096346", id:"flag40724_640"},
-		{src:"images/fruit5004282_640.jpg?1611906096346", id:"fruit5004282_640"},
-		{src:"images/microwave29056_640.png?1611906096346", id:"microwave29056_640"},
-		{src:"images/pier569314_640.jpg?1611906096346", id:"pier569314_640"},
-		{src:"images/shutterstock_672353038.jpg?1611906096346", id:"shutterstock_672353038"},
-		{src:"sounds/fallmp3.mp3?1611906096346", id:"fallmp3"},
-		{src:"sounds/high5wav.mp3?1611906096346", id:"high5wav"},
-		{src:"sounds/musicmp3.mp3?1611906096346", id:"musicmp3"},
-		{src:"sounds/rockswav.mp3?1611906096346", id:"rockswav"},
-		{src:"sounds/ropewav.mp3?1611906096346", id:"ropewav"},
-		{src:"sounds/uhohwav.mp3?1611906096346", id:"uhohwav"},
-		{src:"sounds/yaywav.mp3?1611906096346", id:"yaywav"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1611906096346", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1611906096346", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1611906096346", id:"an.ComboBox"}
+		{src:"images/apollo148722_640.jpg?1611906818821", id:"apollo148722_640"},
+		{src:"images/Bitmap12.png?1611906818821", id:"Bitmap12"},
+		{src:"images/Bitmap13.png?1611906818821", id:"Bitmap13"},
+		{src:"images/Bitmap14.png?1611906818821", id:"Bitmap14"},
+		{src:"images/Bitmap15.png?1611906818821", id:"Bitmap15"},
+		{src:"images/Bitmap16.png?1611906818821", id:"Bitmap16"},
+		{src:"images/Bitmap17.png?1611906818821", id:"Bitmap17"},
+		{src:"images/Bitmap18.png?1611906818821", id:"Bitmap18"},
+		{src:"images/Bitmap20.png?1611906818821", id:"Bitmap20"},
+		{src:"images/Bitmap21.png?1611906818821", id:"Bitmap21"},
+		{src:"images/Bitmap22.png?1611906818821", id:"Bitmap22"},
+		{src:"images/Bitmap23.png?1611906818821", id:"Bitmap23"},
+		{src:"images/Bitmap28.png?1611906818821", id:"Bitmap28"},
+		{src:"images/Bitmap29.png?1611906818821", id:"Bitmap29"},
+		{src:"images/Bitmap35.png?1611906818821", id:"Bitmap35"},
+		{src:"images/Bitmap39.png?1611906818821", id:"Bitmap39"},
+		{src:"images/Bitmap40.png?1611906818821", id:"Bitmap40"},
+		{src:"images/Bitmap41.png?1611906818821", id:"Bitmap41"},
+		{src:"images/Bitmap42.png?1611906818821", id:"Bitmap42"},
+		{src:"images/Bitmap43.png?1611906818821", id:"Bitmap43"},
+		{src:"images/Bitmap44.png?1611906818821", id:"Bitmap44"},
+		{src:"images/Bitmap45.png?1611906818821", id:"Bitmap45"},
+		{src:"images/Bitmap46.png?1611906818821", id:"Bitmap46"},
+		{src:"images/Bitmap47.png?1611906818821", id:"Bitmap47"},
+		{src:"images/flag40724_640.png?1611906818821", id:"flag40724_640"},
+		{src:"images/fruit5004282_640.jpg?1611906818821", id:"fruit5004282_640"},
+		{src:"images/microwave29056_640.png?1611906818821", id:"microwave29056_640"},
+		{src:"images/pier569314_640.jpg?1611906818821", id:"pier569314_640"},
+		{src:"images/shutterstock_672353038.jpg?1611906818821", id:"shutterstock_672353038"},
+		{src:"sounds/fallmp3.mp3?1611906818821", id:"fallmp3"},
+		{src:"sounds/high5wav.mp3?1611906818821", id:"high5wav"},
+		{src:"sounds/musicmp3.mp3?1611906818821", id:"musicmp3"},
+		{src:"sounds/rockswav.mp3?1611906818821", id:"rockswav"},
+		{src:"sounds/ropewav.mp3?1611906818821", id:"ropewav"},
+		{src:"sounds/uhohwav.mp3?1611906818821", id:"uhohwav"},
+		{src:"sounds/yaywav.mp3?1611906818821", id:"yaywav"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1611906818821", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1611906818821", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1611906818821", id:"an.ComboBox"}
 	],
 	preloads: []
 };

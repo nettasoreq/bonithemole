@@ -9194,15 +9194,15 @@ if (reversed == null) { reversed = false; }
 		
 		
 		
-		//initL();//הטעמת סאונד בקובץ אנימייט לוקאלי
-		initW();//הטמעת סאונד בקובץ שעולה לגיטהאב
+		initL();//הטעמת סאונד בקובץ אנימייט לוקאלי
+		//initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
 		
 		
 		/////////////////////////////////////
 		//............הטמעת סאונד...........
 		////////////////////////////////////
 		
-		function initL() {//קובץ לוקאלי
+		function initL() { //קובץ לוקאלי
 			//לטעון את הסאונד - נתיב + שם
 			createjs.Sound.registerSound("/sounds/rockswav.mp3", "rocks");
 			createjs.Sound.registerSound("/sounds/yaywav.mp3", "yay");
@@ -9211,9 +9211,12 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.registerSound("/sounds/musicmp3.mp3", "music");
 			createjs.Sound.registerSound("/sounds/ropewav.mp3", "ropeS");
 			createjs.Sound.registerSound("/sounds/high5wav.mp3", "high5");
+			
+			//קריאה להטמעת פונטים לוקאלית
+			 webfontL();
 		}
-		function initW(){//קובץ שעולה לגיטהאב
-				//לטעון את הסאונד - נתיב + שם
+		function initW() { //קובץ שעולה לגיטהאב
+			//לטעון את הסאונד - נתיב + שם
 			createjs.Sound.registerSound("https://nettasoreq.github.io/bonithemole/sounds/rockswav.mp3", "rocks");
 			createjs.Sound.registerSound("https://nettasoreq.github.io/bonithemole/sounds/yaywav.mp3", "yay");
 			createjs.Sound.registerSound("https://nettasoreq.github.io/bonithemole/sounds/fallmp3.mp3", "fall");
@@ -9230,25 +9233,24 @@ if (reversed == null) { reversed = false; }
 		///////////////////////////////////////////
 		//.............הטמעת פונט בקוד.............
 		///////////////////////////////////////////
+		function webfontL() {
+			WebFontConfig = {
+				google: {
+					families: ['Alef'] //כאן בחרו את הפונט
+				}
+			};
 		
+			(function () {
+				var wf = document.createElement('script');
+				wf.src = ('https' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = true;
+				var s = document.getElementsByTagName('script')[0];
 		
-		WebFontConfig = {
-			google: {
-				families: ['Alef'] //כאן בחרו את הפונט
-			}
-		};
+				s.parentNode.insertBefore(wf, s);
+			})();
 		
-		(function () {
-			var wf = document.createElement('script');
-			wf.src = ('https' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-			wf.type = 'text/javascript';
-			wf.async = true;
-			var s = document.getElementsByTagName('script')[0];
-		
-			s.parentNode.insertBefore(wf, s);
-		})();
-		
-		
+		}
 		
 		
 		//////////////////////////////////////////////////////
@@ -9266,7 +9268,7 @@ if (reversed == null) { reversed = false; }
 		var myinterval; //זמן לשאלה
 		var mygame; //מערך של השאלות- משתנה בהתאם לבחירת משחק
 		var mychoice; //איזה חידון נבחר
-		var wrong;//מספר טעויות
+		var wrong; //מספר טעויות
 		//////////////////////////////////
 		//מצטברים
 		var totaltime; //זמן כולל
@@ -9404,7 +9406,7 @@ if (reversed == null) { reversed = false; }
 						["5 תפוחים כי שי לקח 2 ודן לקח 3", "text", false, false],
 						["6 תפוחים כי דן לקח 4 ושי 2", "text", false, false],
 						[lib.mathQ0_2, "img", false, true]
-						
+		
 					],
 					[
 						["שירה והילה טיילו בגינה ומצאו פרח יפה. שירה והילה מתלבטות האם יש לפרח יותר עלים בצבע תכלת או בצבע לבן", lib.mathQ1, 0, 0, false, 30],
@@ -9605,7 +9607,7 @@ if (reversed == null) { reversed = false; }
 				qtick = false; //האם זה זמן מענה או זמן אנימציה- דגל
 				qtime = 0;
 				myscore = 0;
-				wrong=0;
+				wrong = 0;
 				///////////////////////////////
 				//רקע
 		
@@ -9661,7 +9663,7 @@ if (reversed == null) { reversed = false; }
 				//בדיקה שהשאלה אמורה להיות מוצגת על פי מספר האם נענתה ומתי היא נענתה
 				if (mygame[qnum][0][4] == false && (mygame.length - correct < 2 || trys - mygame[qnum][0][2] >= 2 || trys == 0 || mygame[qnum][0][2] == 0 && trys == 1)) {
 					var insTxt = instructions.insTxt;
-				
+		
 					createjs.Tween.get(insTxt).wait(500).to({
 						alpha: 1
 					}, 500);
@@ -9683,7 +9685,7 @@ if (reversed == null) { reversed = false; }
 					quest.y = 720;
 		
 					//מיקום בשכבות
-					stage.addChildAt(quest, stage.numChildren- 3);
+					stage.addChildAt(quest, stage.numChildren - 3);
 		
 					//אנימציית שאלה
 					createjs.Tween.get(quest).to({
@@ -9728,7 +9730,7 @@ if (reversed == null) { reversed = false; }
 		
 						//הוספת זכוכית מגדלת
 						var magnifyingglass = new lib.glass()
-						magnifyingglass.x = (myQpic.nominalBounds.width * myscaleP) / 2;//שלא יעלה על השאלה
+						magnifyingglass.x = (myQpic.nominalBounds.width * myscaleP) / 2; //שלא יעלה על השאלה
 						magnifyingglass.y = 60;
 						magnifyingglass.scale = 0.3
 						quest.addChild(magnifyingglass);
@@ -9930,7 +9932,7 @@ if (reversed == null) { reversed = false; }
 						scale: 1.5
 					}, 500);
 					//מעבר לשכבה העליונה כדי שהתמונה לא תוסתר
-					stage.setChildIndex(scaleme, stage.numChildren- 1);
+					stage.setChildIndex(scaleme, stage.numChildren - 1);
 				}
 			}
 		
@@ -10536,45 +10538,45 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/apollo148722_640.jpg?1611857492084", id:"apollo148722_640"},
-		{src:"images/Bitmap12.png?1611857492084", id:"Bitmap12"},
-		{src:"images/Bitmap13.png?1611857492084", id:"Bitmap13"},
-		{src:"images/Bitmap14.png?1611857492084", id:"Bitmap14"},
-		{src:"images/Bitmap15.png?1611857492084", id:"Bitmap15"},
-		{src:"images/Bitmap16.png?1611857492084", id:"Bitmap16"},
-		{src:"images/Bitmap17.png?1611857492084", id:"Bitmap17"},
-		{src:"images/Bitmap18.png?1611857492084", id:"Bitmap18"},
-		{src:"images/Bitmap20.png?1611857492084", id:"Bitmap20"},
-		{src:"images/Bitmap21.png?1611857492084", id:"Bitmap21"},
-		{src:"images/Bitmap22.png?1611857492084", id:"Bitmap22"},
-		{src:"images/Bitmap23.png?1611857492084", id:"Bitmap23"},
-		{src:"images/Bitmap28.png?1611857492084", id:"Bitmap28"},
-		{src:"images/Bitmap29.png?1611857492084", id:"Bitmap29"},
-		{src:"images/Bitmap35.png?1611857492084", id:"Bitmap35"},
-		{src:"images/Bitmap39.png?1611857492084", id:"Bitmap39"},
-		{src:"images/Bitmap40.png?1611857492084", id:"Bitmap40"},
-		{src:"images/Bitmap41.png?1611857492084", id:"Bitmap41"},
-		{src:"images/Bitmap42.png?1611857492084", id:"Bitmap42"},
-		{src:"images/Bitmap43.png?1611857492084", id:"Bitmap43"},
-		{src:"images/Bitmap44.png?1611857492084", id:"Bitmap44"},
-		{src:"images/Bitmap45.png?1611857492084", id:"Bitmap45"},
-		{src:"images/Bitmap46.png?1611857492084", id:"Bitmap46"},
-		{src:"images/Bitmap47.png?1611857492084", id:"Bitmap47"},
-		{src:"images/flag40724_640.png?1611857492084", id:"flag40724_640"},
-		{src:"images/fruit5004282_640.jpg?1611857492084", id:"fruit5004282_640"},
-		{src:"images/microwave29056_640.png?1611857492084", id:"microwave29056_640"},
-		{src:"images/pier569314_640.jpg?1611857492084", id:"pier569314_640"},
-		{src:"images/shutterstock_672353038.jpg?1611857492084", id:"shutterstock_672353038"},
-		{src:"sounds/fallmp3.mp3?1611857492084", id:"fallmp3"},
-		{src:"sounds/high5wav.mp3?1611857492084", id:"high5wav"},
-		{src:"sounds/musicmp3.mp3?1611857492084", id:"musicmp3"},
-		{src:"sounds/rockswav.mp3?1611857492084", id:"rockswav"},
-		{src:"sounds/ropewav.mp3?1611857492084", id:"ropewav"},
-		{src:"sounds/uhohwav.mp3?1611857492084", id:"uhohwav"},
-		{src:"sounds/yaywav.mp3?1611857492084", id:"yaywav"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1611857492084", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1611857492084", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1611857492084", id:"an.ComboBox"}
+		{src:"images/apollo148722_640.jpg?1611906096346", id:"apollo148722_640"},
+		{src:"images/Bitmap12.png?1611906096346", id:"Bitmap12"},
+		{src:"images/Bitmap13.png?1611906096346", id:"Bitmap13"},
+		{src:"images/Bitmap14.png?1611906096346", id:"Bitmap14"},
+		{src:"images/Bitmap15.png?1611906096346", id:"Bitmap15"},
+		{src:"images/Bitmap16.png?1611906096346", id:"Bitmap16"},
+		{src:"images/Bitmap17.png?1611906096346", id:"Bitmap17"},
+		{src:"images/Bitmap18.png?1611906096346", id:"Bitmap18"},
+		{src:"images/Bitmap20.png?1611906096346", id:"Bitmap20"},
+		{src:"images/Bitmap21.png?1611906096346", id:"Bitmap21"},
+		{src:"images/Bitmap22.png?1611906096346", id:"Bitmap22"},
+		{src:"images/Bitmap23.png?1611906096346", id:"Bitmap23"},
+		{src:"images/Bitmap28.png?1611906096346", id:"Bitmap28"},
+		{src:"images/Bitmap29.png?1611906096346", id:"Bitmap29"},
+		{src:"images/Bitmap35.png?1611906096346", id:"Bitmap35"},
+		{src:"images/Bitmap39.png?1611906096346", id:"Bitmap39"},
+		{src:"images/Bitmap40.png?1611906096346", id:"Bitmap40"},
+		{src:"images/Bitmap41.png?1611906096346", id:"Bitmap41"},
+		{src:"images/Bitmap42.png?1611906096346", id:"Bitmap42"},
+		{src:"images/Bitmap43.png?1611906096346", id:"Bitmap43"},
+		{src:"images/Bitmap44.png?1611906096346", id:"Bitmap44"},
+		{src:"images/Bitmap45.png?1611906096346", id:"Bitmap45"},
+		{src:"images/Bitmap46.png?1611906096346", id:"Bitmap46"},
+		{src:"images/Bitmap47.png?1611906096346", id:"Bitmap47"},
+		{src:"images/flag40724_640.png?1611906096346", id:"flag40724_640"},
+		{src:"images/fruit5004282_640.jpg?1611906096346", id:"fruit5004282_640"},
+		{src:"images/microwave29056_640.png?1611906096346", id:"microwave29056_640"},
+		{src:"images/pier569314_640.jpg?1611906096346", id:"pier569314_640"},
+		{src:"images/shutterstock_672353038.jpg?1611906096346", id:"shutterstock_672353038"},
+		{src:"sounds/fallmp3.mp3?1611906096346", id:"fallmp3"},
+		{src:"sounds/high5wav.mp3?1611906096346", id:"high5wav"},
+		{src:"sounds/musicmp3.mp3?1611906096346", id:"musicmp3"},
+		{src:"sounds/rockswav.mp3?1611906096346", id:"rockswav"},
+		{src:"sounds/ropewav.mp3?1611906096346", id:"ropewav"},
+		{src:"sounds/uhohwav.mp3?1611906096346", id:"uhohwav"},
+		{src:"sounds/yaywav.mp3?1611906096346", id:"yaywav"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1611906096346", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1611906096346", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1611906096346", id:"an.ComboBox"}
 	],
 	preloads: []
 };

@@ -251,13 +251,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,640,430);
 (lib.pier569314_640 = function() {
 	this.initialize(img.pier569314_640);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,640,426);
-
-
-(lib.shutterstock_672353038 = function() {
-	this.initialize(img.shutterstock_672353038);
-}).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,1400,1050);// helper functions:
+p.nominalBounds = new cjs.Rectangle(0,0,640,426);// helper functions:
 
 function mc_symbol_clone() {
 	var clone = this._cloneProps(new this.constructor(this.mode, this.startPosition, this.loop, this.reversed));
@@ -2799,6 +2793,7 @@ if (reversed == null) { reversed = false; }
 		var self = this;
 		self.cursor = "pointer";
 		self.btnT.font="bold 28px Alef"
+		self.addEventListener("rollover",self.gotoAndStop(1))
 	}
 
 	// actions tween:
@@ -3944,28 +3939,6 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = getMCSymbolPrototype(lib.bg, new cjs.Rectangle(-639.9,-5000,1279.9,10000), null);
-
-
-(lib.beer = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_1
-	this.instance = new lib.shutterstock_672353038();
-	this.instance.setTransform(-700,-525);
-
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.beer, new cjs.Rectangle(-700,-525,1400,1050), null);
 
 
 (lib.tree = function(mode,startPosition,loop,reversed) {
@@ -7697,7 +7670,7 @@ if (reversed == null) { reversed = false; }
 
 	this.shape_7 = new cjs.Shape();
 	this.shape_7.graphics.f("#89AB3B").s().p("EAAAAnNMg9jADzMAAAhV/MB7HAAAMAAABV/g");
-	this.shape_7.setTransform(-0.2076,70.425,0.7828,1);
+	this.shape_7.setTransform(-0.2181,70.425,0.7828,1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.reBtn},{t:this.users},{t:this.usert},{t:this.usertry},{t:this.endBtn},{t:this.userH}]}).wait(1));
 
@@ -7740,7 +7713,7 @@ if (reversed == null) { reversed = false; }
 	this.endT.lineHeight = 40;
 	this.endT.lineWidth = 262;
 	this.endT.parent = this;
-	this.endT.setTransform(15.25,-66.7);
+	this.endT.setTransform(0,-66.7);
 
 	this.endH = new cjs.Text("בראבו!", "bold 45px 'Alef'", "#FFFFD4");
 	this.endH.name = "endH";
@@ -7748,40 +7721,40 @@ if (reversed == null) { reversed = false; }
 	this.endH.lineHeight = 63;
 	this.endH.lineWidth = 182;
 	this.endH.parent = this;
-	this.endH.setTransform(6.3,-201.5,1.2079,1.2079);
+	this.endH.setTransform(0,-201.5,1.2079,1.2079);
 
 	this.conBtn = new lib.nextBtn();
 	this.conBtn.name = "conBtn";
-	this.conBtn.setTransform(5.45,132.35,0.995,0.995,0,0,0,88,36.6);
+	this.conBtn.setTransform(-0.1,121.35,0.8694,0.8694,0,0,0,88,36.6);
 
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#F3FBE5").s().p("AkYHDQjTAAhrieQheiMAAjxIAAkIQAAhBFIgXQCkgLClABIByADQCIAEByAIQFsAaAAA5IAAEIQAADxheCMQhrCejTAAg");
-	this.shape.setTransform(8.2669,13.5574,2.3618,2.3618);
+	this.shape.setTransform(2.1169,13.5574,2.3618,2.3618);
 
 	this.shape_1 = new cjs.Shape();
 	this.shape_1.graphics.f("#5B781E").s().p("AojPHQmeAAjQk1Qi4kSAAnYIAAqcQAAiLKBgxQFBgYFDADIDeAFQELAIDeASQLHA4AAB6IAAKcQAAHYi3ESQjRE1mdAAg");
-	this.shape_1.setTransform(8.0208,11.7102,1.2081,1.2081);
+	this.shape_1.setTransform(1.8708,11.7102,1.2081,1.2081);
 
 	this.shape_2 = new cjs.Shape();
 	this.shape_2.graphics.f("#6A976E").s().p("At2CgQhDAAgugvQgvgvAAhCQAAhCAvguQAugvBDAAIbtAAQBDAAAuAvQAvAuAABCQAABCgvAvQguAvhDAAg");
-	this.shape_2.setTransform(6.1412,-166.8649,2.3618,2.3618);
+	this.shape_2.setTransform(-0.0088,-166.8649,2.3618,2.3618);
 
 	this.shape_3 = new cjs.Shape();
 	this.shape_3.graphics.f("#B8D7AE").s().p("AtsCrQhGAAgygyQgygyAAhHQAAhFAygzQAygyBGAAIbYAAQBHAAAyAyQAyAzAABFQAABHgyAyQgyAyhHAAg");
-	this.shape_3.setTransform(6.1412,-169.4629,2.3618,2.3618);
+	this.shape_3.setTransform(-0.0088,-169.4629,2.3618,2.3618);
 
 	this.shape_4 = new cjs.Shape();
 	this.shape_4.graphics.f("#89AB3B").s().p("AkIWuQk1iAjeg7QjPg2lmAVQizALiKAWMAAAgsVMA0bAAAMAAAAsVQiTgai/gNQl8gZjZBAQjSA+kgB/Ij1BzQhug1iahAg");
-	this.shape_4.setTransform(6.1482,53.8339,1.2081,1.2081);
+	this.shape_4.setTransform(-0.0018,53.8339,1.2081,1.2081);
 
 	this.instance = new lib.Symbol8();
-	this.instance.setTransform(-0.25,-140.55,1.8561,1.8561,0,0,0,347.4,198.9);
+	this.instance.setTransform(-0.35,-140.55,1.8561,1.8561,0,0,0,347.4,198.9);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.conBtn},{t:this.endH},{t:this.endT}]}).wait(1));
 
 	this._renderFirstFrame();
 
-}).prototype = getMCSymbolPrototype(lib.end1, new cjs.Rectangle(-645,-509.7,1290.3,753.3), null);
+}).prototype = getMCSymbolPrototype(lib.end1, new cjs.Rectangle(-645.1,-509.7,1290.3000000000002,753.3), null);
 
 
 (lib.conBtn = function(mode,startPosition,loop,reversed) {
@@ -7872,9 +7845,9 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_2
 	this.instance = new lib.Symbol3();
-	this.instance.setTransform(-2.8,-0.6,0.6913,0.6913,0,0,0,84.6,36.1);
+	this.instance.setTransform(-2.85,-0.6,0.6913,0.6913,0,0,0,84.5,36.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:88.1,regY:36.5,scaleX:0.7151,scaleY:0.7151,x:-0.25,y:-0.25},0).wait(1).to({scaleX:0.7388,scaleY:0.7388,x:-0.15},0).wait(1).to({scaleX:0.7626,scaleY:0.7626,x:-0.05,y:-0.2},0).wait(1).to({scaleX:0.7863,scaleY:0.7863,x:0},0).wait(1).to({scaleX:0.8101,scaleY:0.8101,x:0.1,y:-0.15},0).wait(1).to({scaleX:0.8338,scaleY:0.8338,x:0.2,y:-0.1},0).wait(1).to({scaleX:0.8576,scaleY:0.8576,x:0.3},0).wait(1).to({scaleX:0.8813,scaleY:0.8813,x:0.45},0).wait(1).to({scaleX:0.905,scaleY:0.905,x:0.55,y:0},0).wait(1).to({scaleX:0.9288,scaleY:0.9288,x:0.6},0).wait(1).to({scaleX:0.9525,scaleY:0.9525,x:0.7},0).wait(1).to({scaleX:0.9763,scaleY:0.9763,x:0.8,y:0.05},0).wait(1).to({scaleX:1,scaleY:1,x:0.9,y:0.1},0).to({_off:true},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:88.1,regY:36.5,scaleX:0.7151,scaleY:0.7151,x:-0.2,y:-0.25},0).wait(1).to({scaleX:0.7388,scaleY:0.7388,x:-0.1},0).wait(1).to({scaleX:0.7626,scaleY:0.7626,x:0,y:-0.2},0).wait(1).to({scaleX:0.7863,scaleY:0.7863,x:0.05},0).wait(1).to({scaleX:0.8101,scaleY:0.8101,x:0.15,y:-0.15},0).wait(1).to({scaleX:0.8338,scaleY:0.8338,x:0.25,y:-0.1},0).wait(1).to({scaleX:0.8576,scaleY:0.8576,x:0.4},0).wait(1).to({scaleX:0.8813,scaleY:0.8813,x:0.5},0).wait(1).to({scaleX:0.905,scaleY:0.905,x:0.6,y:0},0).wait(1).to({scaleX:0.9288,scaleY:0.9288,x:0.65},0).wait(1).to({scaleX:0.9525,scaleY:0.9525,x:0.75},0).wait(1).to({scaleX:0.9763,scaleY:0.9763,x:0.85,y:0.05},0).wait(1).to({scaleX:1,scaleY:1,x:1,y:0.1},0).to({_off:true},1).wait(2));
 
 	this._renderFirstFrame();
 
@@ -9191,16 +9164,13 @@ if (reversed == null) { reversed = false; }
 		
 		
 		
-		
-		
-		
-		//initL();//הטעמת סאונד בקובץ אנימייט לוקאלי
-		initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
-		
-		
 		/////////////////////////////////////
 		//............הטמעת סאונד...........
 		////////////////////////////////////
+		
+		
+		//initL(); //הטעמת סאונד בקובץ אנימייט לוקאלי
+		initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
 		
 		function initL() { //קובץ לוקאלי
 			//לטעון את הסאונד - נתיב + שם
@@ -9211,9 +9181,9 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.registerSound("/sounds/musicmp3.mp3", "music");
 			createjs.Sound.registerSound("/sounds/ropewav.mp3", "ropeS");
 			createjs.Sound.registerSound("/sounds/high5wav.mp3", "high5");
-			
+		
 			//קריאה להטמעת פונטים לוקאלית
-			 webfontL();
+			webfontL();
 		}
 		function initW() { //קובץ שעולה לגיטהאב
 			//לטעון את הסאונד - נתיב + שם
@@ -9225,10 +9195,6 @@ if (reversed == null) { reversed = false; }
 			createjs.Sound.registerSound("https://nettasoreq.github.io/bonithemole/sounds/ropewav.mp3", "ropeS");
 			createjs.Sound.registerSound("https://nettasoreq.github.io/bonithemole/sounds/high5wav.mp3", "high5");
 		}
-		
-		
-		
-		
 		
 		///////////////////////////////////////////
 		//.............הטמעת פונט בקוד.............
@@ -9269,10 +9235,11 @@ if (reversed == null) { reversed = false; }
 		var mygame; //מערך של השאלות- משתנה בהתאם לבחירת משחק
 		var mychoice; //איזה חידון נבחר
 		var wrong; //מספר טעויות
+		var wrong1;
+		var wrong2;
 		//////////////////////////////////
 		//מצטברים
 		var totaltime; //זמן כולל
-		var trys; //כמה נסיונות מענה היו
 		var correct; //תשובות נכונות
 		var myscore; //ניקוד כללי
 		var qtime; //מונה זמן ללא אינטראקציה
@@ -9357,7 +9324,7 @@ if (reversed == null) { reversed = false; }
 			mymusic.volume = 0;
 			createjs.Tween.get(mymusic).to({
 				volume: 0.2
-			}, 2000);
+			}, 2000).wait(9000).call(startanimation);
 		
 		
 			stage.getChildByName("startframe").gotoAndPlay(1);
@@ -9369,7 +9336,7 @@ if (reversed == null) { reversed = false; }
 			}
 		
 		
-			var startani = setTimeout(startanimation, 11000)
+			//var startani = setTimeout(startanimation, 11000)
 		
 		}
 		
@@ -9601,13 +9568,15 @@ if (reversed == null) { reversed = false; }
 		
 				///////////////////////////////
 				//איפוס דגלים	
-				trys = 0; //כמה נסיונות מענה היו
 				correct = 0; //תשובות נכונות
 				totaltime = 0; //זמן כולל
 				qtick = false; //האם זה זמן מענה או זמן אנימציה- דגל
 				qtime = 0;
 				myscore = 0;
 				wrong = 0;
+		
+				wrong1 = -1;
+				wrong2 = -1;
 				///////////////////////////////
 				//רקע
 		
@@ -9656,253 +9625,260 @@ if (reversed == null) { reversed = false; }
 				//עדכון מספר השאלה
 				progress.text = (correct + 1) + "/" + mygame.length;
 		
+				/////////////////////////////////////////////////////////
 				//הגרלת שאלה
 				qnum = Math.floor((Math.random() * (mygame.length)));
-		
 				//בדיקת שאלה
-				//בדיקה שהשאלה אמורה להיות מוצגת על פי מספר האם נענתה ומתי היא נענתה
-				if (mygame[qnum][0][4] == false && (mygame.length - correct < 2 || trys - mygame[qnum][0][2] >= 2 || trys == 0 || mygame[qnum][0][2] == 0 && trys == 1)) {
-					var insTxt = instructions.insTxt;
+				//הגרלת שאלה עד שתצא שאלה שלא נענתה עדיין נכון ושעבר מספיק זמן מאז שהופיעה לאחרונה (אם הופיעה)
 		
-					createjs.Tween.get(insTxt).wait(500).to({
-						alpha: 1
-					}, 500);
-					//הצבת בוני על הבמה
-					boni = new lib.boni();
-					stage.addChildAt(boni, 1)
-					boni.x = 690;
-					boni.y = 720;
+				if (correct == mygame.length - 1) //שאלה אחרונה
+					while (mygame[qnum][0][4] == true)
+						qnum = Math.floor((Math.random() * (mygame.length)));
 		
-					//אנימצית כניסה
-					createjs.Tween.get(boni).wait(500).to({
-						y: 400
-					}, 1000);
+				else if (correct == mygame.length - 2) //שתי תשובות שלא נענו- להגריל לתשובה השניה
+					while (qnum == wrong1 || mygame[qnum][0][4] == true)
+						qnum = Math.floor((Math.random() * (mygame.length)));
 		
-					//הוספת השאלה
-					var quest = new lib.quest()
-					quest.name = "quest";
-					quest.x = 690;
-					quest.y = 720;
+				else //כל השאלות- לבדוק שהתשובה לא נענתה לאחרונה
+					while (qnum == wrong1 || qnum == wrong2 || mygame[qnum][0][4] == true)
+						qnum = Math.floor((Math.random() * (mygame.length)));
 		
-					//מיקום בשכבות
-					stage.addChildAt(quest, stage.numChildren - 3);
+				var insTxt = instructions.insTxt;
+		
+				createjs.Tween.get(insTxt).wait(500).to({
+					alpha: 1
+				}, 500);
+				//הצבת בוני על הבמה
+				boni = new lib.boni();
+				stage.addChildAt(boni, 1)
+				boni.x = 690;
+				boni.y = 720;
+		
+				//אנימצית כניסה
+				createjs.Tween.get(boni).wait(500).to({
+					y: 400
+				}, 1000);
+		
+				//הוספת השאלה
+				var quest = new lib.quest()
+				quest.name = "quest";
+				quest.x = 690;
+				quest.y = 720;
+		
+				//מיקום בשכבות
+				stage.addChildAt(quest, stage.numChildren - 3);
+		
+				//אנימציית שאלה
+				createjs.Tween.get(quest).to({
+					y: 535
+				}, 1000);
+		
+		
+				var myQ = new createjs.Text(mygame[qnum][0][0], "bold 22px Alef", "#622001");
+				myQ.textAlign = "center";
+				//בדיקת סוג השאלה
+		
+				if (mygame[qnum][0][1] != "") {
+					/////////////////////////////
+					//תמונה בשאלה
+					if (mygame[qnum][0][0].length > 80) {
+						//שאלה ארוכה- ליישר טקסט לימין כדי שלא יתנגש עם התמונה
+						myQ.textAlign = "right";
+						myQ.x = 530;
+					}
+					var myQpic = new(mygame[qnum][0][1]); //הוספת התמונה
+		
+					////////////////////////////////////////////////////////////////
+					//מוביקליפ שמכיל את התמונה עם המסכה על מנת שיגדלו ביחד במעבר עכבר
+					var formask = new lib.formask()
+					formask.name = "formask"
+					formask.x = 0
+					formask.y = 40
+					quest.addChild(formask);
+		
+					//התאמת גודל התמונה שתתאים למקום בשאלה
+					myscaleP = 70 / myQpic.nominalBounds.height;
+					myQpic.scale = myscaleP;
+					myQpic.y = 0;
+					/////////////////////
+					//מסכה לתמונה
+					var mymask = new createjs.Shape(new createjs.Graphics().f("#000").drawRoundRect(2.5, 2.5, myQpic.nominalBounds.width * myscaleP - 5, 65, 15, 15, 15, 15))
+					mymask.regX = (myQpic.nominalBounds.width * myscaleP) / 2
+					mymask.regY = 35
+					myQpic.mask = mymask;
+		
+					formask.addChild(myQpic);
+		
+					//הוספת זכוכית מגדלת
+					var magnifyingglass = new lib.glass()
+					magnifyingglass.x = (myQpic.nominalBounds.width * myscaleP) / 2; //שלא יעלה על השאלה
+					magnifyingglass.y = 60;
+					magnifyingglass.scale = 0.3
+					quest.addChild(magnifyingglass);
+					magnifyingglass.name = "magnifyingglassQ";
+		
+					//הגדלה והקטנה במעבר עכבר
+					formask.addEventListener("rollover", bigQ)
+					formask.addEventListener("rollout", smallQ)
+				}
+		
+				///הוספת טקסט של שאלה
+				myQ.y = -30;
+				myQ.lineWidth = 1100; //מקסימום רוחב שאלה
+				myQ.textBaseline = "top";
+				myQ.name = "myQ";
+				quest.addChild(myQ);
+		
+		
+				///////////////////////////////////////////////////
+				//הוספת מסיחים
+				for (var i = 1; i < mygame[qnum].length; i++) {
+					//הגרלת מסיחים- שלא יופיעו פעמיים
+					var rndq = Math.floor((Math.random() * (mygame[qnum].length - 1))) + 1;
+					while (mygame[qnum][rndq][2] == true) ///הגרלה מחדש אם כבר בשימוש
+						rndq = Math.floor((Math.random() * (mygame[qnum].length - 1))) + 1;
+		
+					////////////////////////////////////////////////////////////
+					//לאחר הגרלה	
+					//מחילה
+					var hole = new lib.hole();
+					//מיקום בהתאם למערך המיקומים
+					hole.x = places[mygame[qnum].length][i];
+					hole.y = -100;
+					stage.addChildAt(hole, 1);
+					hole.name = "hole" + rndq;
+		
+					//שכבה שקופה מעל- בשביל המראה של מחילה
+					var holeA = new lib.holeA();
+					//מיקום בהתאם למערך המיקומים
+					holeA.x = places[mygame[qnum].length][i];
+					holeA.y = -100;
+					holeA.name = "holeA" + rndq;
+					stage.addChildAt(holeA, stage.numChildren - 1); //הוספה בשכבה העליונה של המחילה
 		
 					//אנימציית שאלה
-					createjs.Tween.get(quest).to({
-						y: 535
+					createjs.Tween.get(hole).to({
+						y: 20
+					}, 1000);
+					createjs.Tween.get(holeA).to({
+						y: 20
 					}, 1000);
 		
 		
-					var myQ = new createjs.Text(mygame[qnum][0][0], "bold 22px Alef", "#622001");
-					myQ.textAlign = "center";
-					//בדיקת סוג השאלה
+					//איזורי פגיעה
+					var myhit = new lib.hit()
+					//מיקום בהתאם למערך המיקומים
+					myhit.x = places[mygame[qnum].length][i];
+					myhit.y = 140
+					myhit.alpha = 0;
+					stage.addChildAt(myhit, 0);
+					myhit.name = "hit" + rndq; //שם שיתאים למיקום השאלה במערך
 		
-					if (mygame[qnum][0][1] != "") {
-						/////////////////////////////
-						//תמונה בשאלה
-						if (mygame[qnum][0][0].length > 80) {
-							//שאלה ארוכה- ליישר טקסט לימין כדי שלא יתנגש עם התמונה
-							myQ.textAlign = "right";
-							myQ.x = 530;
-						}
-						var myQpic = new(mygame[qnum][0][1]); //הוספת התמונה
+					//הוספת כרטיסיות מסיחים
+					var mycard = new lib.card();
+					mycard.width = 185;
+					mycard.height = 165;
 		
-						////////////////////////////////////////////////////////////////
-						//מוביקליפ שמכיל את התמונה עם המסכה על מנת שיגדלו ביחד במעבר עכבר
-						var formask = new lib.formask()
-						formask.name = "formask"
-						formask.x = 0
-						formask.y = 40
-						quest.addChild(formask);
+					//מיקום בהתאם למערך המיקומים
+					mycard.x = places[mygame[qnum].length][i];
+					mycard.y = 120;
+					mycard.alpha = 0;
+					stage.addChildAt(mycard, 1);
 		
-						//התאמת גודל התמונה שתתאים למקום בשאלה
-						myscaleP = 70 / myQpic.nominalBounds.height;
-						myQpic.scale = myscaleP;
-						myQpic.y = 0;
-						/////////////////////
+					//אנימציה
+					createjs.Tween.get(mycard).wait(1100).to({
+						y: 180,
+						alpha: 1
+					}, 500);
+		
+					mycard.name = "card" + rndq; //שם בהתאם למיקום המסיח במערך
+		
+					//////////////////////////////////////////////
+					//הוספת מסיח
+		
+					//בדיקת סוג מסיח
+					if (mygame[qnum][rndq][1] == "text") {
+						////////////////////////////////
+						//.........מסיח טקסט...........
+		
+						var answer = new createjs.Text(mygame[qnum][rndq][0], "bold 22px Alef", "#622001");
+						answer.textAlign = "center";
+						answer.y = -60;
+						answer.lineWidth = 150;
+						answer.textBaseline = "top";
+						answer.name = "answer";
+		
+					} else {
+						/////////////////////////////////////////
+						//...............מסיח תמונה.............
+		
+						var answer = new(mygame[qnum][rndq][0])
+		
+						//בדיקה- האם התמונה לאורך או לרוחב והתאמה לתמונה
+						if (answer.nominalBounds.width > answer.nominalBounds.height)
+							var myscaleA = 150 / answer.nominalBounds.width
+						else
+							var myscaleA = 120 / answer.nominalBounds.height
+						answer.scale = myscaleA;
+		
+						//////////////////////////////////////////////
 						//מסכה לתמונה
-						var mymask = new createjs.Shape(new createjs.Graphics().f("#000").drawRoundRect(2.5, 2.5, myQpic.nominalBounds.width * myscaleP - 5, 65, 15, 15, 15, 15))
-						mymask.regX = (myQpic.nominalBounds.width * myscaleP) / 2
-						mymask.regY = 35
-						myQpic.mask = mymask;
-		
-						formask.addChild(myQpic);
+						var mymask = new createjs.Shape(new createjs.Graphics().f("#000").drawRoundRect(2.5, 2.5, answer.nominalBounds.width * myscaleA - 5, answer.nominalBounds.height * myscaleA - 5, 15, 15, 15, 15))
+						mymask.regX = (answer.nominalBounds.width * myscaleA) / 2
+						mymask.regY = (answer.nominalBounds.height * myscaleA) / 2
+						answer.mask = mymask;
 		
 						//הוספת זכוכית מגדלת
 						var magnifyingglass = new lib.glass()
-						magnifyingglass.x = (myQpic.nominalBounds.width * myscaleP) / 2; //שלא יעלה על השאלה
-						magnifyingglass.y = 60;
+						magnifyingglass.x = 50
+						magnifyingglass.y = 45
 						magnifyingglass.scale = 0.3
-						quest.addChild(magnifyingglass);
-						magnifyingglass.name = "magnifyingglassQ";
+						mycard.addChildAt(magnifyingglass, 1);
+						magnifyingglass.name = "magnifyingglass";
 		
-						//הגדלה והקטנה במעבר עכבר
-						formask.addEventListener("rollover", bigQ)
-						formask.addEventListener("rollout", smallQ)
+						//////////////////////////////////////////
+						//הוספת אירועי מעבר עכבר להגדלה והקטנה
+						mycard.addEventListener("rollover", bigpic)
+						mycard.addEventListener("rollout", smallpic)
 					}
 		
-					///הוספת טקסט של שאלה
-					myQ.y = -30;
-					myQ.lineWidth = 1100; //מקסימום רוחב שאלה
-					myQ.textBaseline = "top";
-					myQ.name = "myQ";
-					quest.addChild(myQ);
+					//סימון שכבר השתמשו במסיח
+					mygame[qnum][rndq][2] = true;
+					//הוספה לבמה
+					mycard.addChildAt(answer, 0);
 		
-		
-					///////////////////////////////////////////////////
-					//הוספת מסיחים
-					for (var i = 1; i < mygame[qnum].length; i++) {
-						//הגרלת מסיחים- שלא יופיעו פעמיים
-						var rndq = Math.floor((Math.random() * (mygame[qnum].length - 1))) + 1;
-						while (mygame[qnum][rndq][2] == true) ///הגרלה מחדש אם כבר בשימוש
-							rndq = Math.floor((Math.random() * (mygame[qnum].length - 1))) + 1;
-		
-						////////////////////////////////////////////////////////////
-						//לאחר הגרלה	
-						//מחילה
-						var hole = new lib.hole();
-						//מיקום בהתאם למערך המיקומים
-						hole.x = places[mygame[qnum].length][i];
-						hole.y = -100;
-						stage.addChildAt(hole, 1);
-						hole.name = "hole" + rndq;
-		
-						//שכבה שקופה מעל- בשביל המראה של מחילה
-						var holeA = new lib.holeA();
-						//מיקום בהתאם למערך המיקומים
-						holeA.x = places[mygame[qnum].length][i];
-						holeA.y = -100;
-						holeA.name = "holeA" + rndq;
-						stage.addChildAt(holeA, stage.numChildren - 1); //הוספה בשכבה העליונה של המחילה
-		
-						//אנימציית שאלה
-						createjs.Tween.get(hole).to({
-							y: 20
-						}, 1000);
-						createjs.Tween.get(holeA).to({
-							y: 20
-						}, 1000);
-		
-		
-						//איזורי פגיעה
-						var myhit = new lib.hit()
-						//מיקום בהתאם למערך המיקומים
-						myhit.x = places[mygame[qnum].length][i];
-						myhit.y = 140
-						myhit.alpha = 0;
-						stage.addChildAt(myhit, 0);
-						myhit.name = "hit" + rndq; //שם שיתאים למיקום השאלה במערך
-		
-						//הוספת כרטיסיות מסיחים
-						var mycard = new lib.card();
-						mycard.width = 185;
-						mycard.height = 165;
-		
-						//מיקום בהתאם למערך המיקומים
-						mycard.x = places[mygame[qnum].length][i];
-						mycard.y = 120;
-						mycard.alpha = 0;
-						stage.addChildAt(mycard, 1);
-		
-						//אנימציה
-						createjs.Tween.get(mycard).wait(1100).to({
-							y: 180,
-							alpha: 1
-						}, 500);
-		
-						mycard.name = "card" + rndq; //שם בהתאם למיקום המסיח במערך
-		
-						//////////////////////////////////////////////
-						//הוספת מסיח
-		
-						//בדיקת סוג מסיח
-						if (mygame[qnum][rndq][1] == "text") {
-							////////////////////////////////
-							//.........מסיח טקסט...........
-		
-							var answer = new createjs.Text(mygame[qnum][rndq][0], "bold 22px Alef", "#622001");
-							answer.textAlign = "center";
-							answer.y = -60;
-							answer.lineWidth = 150;
-							answer.textBaseline = "top";
-							answer.name = "answer";
-		
-						} else {
-							/////////////////////////////////////////
-							//...............מסיח תמונה.............
-		
-							var answer = new(mygame[qnum][rndq][0])
-		
-							//בדיקה- האם התמונה לאורך או לרוחב והתאמה לתמונה
-							if (answer.nominalBounds.width > answer.nominalBounds.height)
-								var myscaleA = 150 / answer.nominalBounds.width
-							else
-								var myscaleA = 120 / answer.nominalBounds.height
-							answer.scale = myscaleA;
-		
-							//////////////////////////////////////////////
-							//מסכה לתמונה
-							var mymask = new createjs.Shape(new createjs.Graphics().f("#000").drawRoundRect(0, 5, 150, 120, 15, 15, 15, 15))
-							mymask.regX = 75
-							mymask.regY = 65
-							answer.mask = mymask;
-		
-							//הוספת זכוכית מגדלת
-							var magnifyingglass = new lib.glass()
-							magnifyingglass.x = 50
-							magnifyingglass.y = 45
-							magnifyingglass.scale = 0.3
-							mycard.addChildAt(magnifyingglass, 1);
-							magnifyingglass.name = "magnifyingglass";
-		
-							//////////////////////////////////////////
-							//הוספת אירועי מעבר עכבר להגדלה והקטנה
-							mycard.addEventListener("rollover", bigpic)
-							mycard.addEventListener("rollout", smallpic)
-						}
-		
-						//סימון שכבר השתמשו במסיח
-						mygame[qnum][rndq][2] = true;
-						//הוספה לבמה
-						mycard.addChildAt(answer, 0);
-		
-					}
-		
-					/////////////////////////////////////////////////////////
-					//זמן לשאלה- לפי הגדרת השאלה
-					mytime = mygame[qnum][0][5]
-					//מראה השעון
-					usertime = new lib.time();
-					usertime.name = "usertime";
-					usertime.x = 690;
-					usertime.y = 720;
-					var utime = new createjs.Text("", "bold 30px Alef", "#622001")
-					utime.name = "utime";
-					utime.x = -21
-					utime.y = -16
-					utime.text = "0:" + mytime;
-					usertime.addChild(utime)
-					stage.addChildAt(usertime, 0);
-					//אנימציה
-					createjs.Tween.get(usertime).wait(1000).to({
-						y: 475
-					}, 500);
-		
-					//לאחר האנימציות, תחילת זמן
-					var stime = setTimeout(starttime, 1500)
-		
-		
-					///////////////////////////////////////////////////
-					//סידור שכבות בבמה
-					stage.setChildIndex(bricks, 0);
-					stage.setChildIndex(bg, 1);
-					stage.setChildIndex(instructions, stage.numChildren - 2);
-					stage.setChildIndex(prog, stage.numChildren - 1);
-		
-				} else {
-					//אם השאלה שהוגרלה לא אמורה להופיע- להגריל מחדש
-					question();
 				}
+		
+				/////////////////////////////////////////////////////////
+				//זמן לשאלה- לפי הגדרת השאלה
+				mytime = mygame[qnum][0][5]
+				//מראה השעון
+				usertime = new lib.time();
+				usertime.name = "usertime";
+				usertime.x = 690;
+				usertime.y = 720;
+				var utime = new createjs.Text("", "bold 30px Alef", "#622001")
+				utime.name = "utime";
+				utime.x = -21
+				utime.y = -16
+				utime.text = "0:" + mytime;
+				usertime.addChild(utime)
+				stage.addChildAt(usertime, 0);
+				//אנימציה
+				createjs.Tween.get(usertime).wait(1000).to({
+					y: 475
+				}, 500).call(starttime);
+		
+				//לאחר האנימציות, תחילת זמן
+				//var stime = setTimeout(starttime, 1500)
+		
+		
+				///////////////////////////////////////////////////
+				//סידור שכבות בבמה
+				stage.setChildIndex(bricks, 0);
+				stage.setChildIndex(bg, 1);
+				stage.setChildIndex(instructions, stage.numChildren - 2);
+				stage.setChildIndex(prog, stage.numChildren - 1);
 			}
 		
 			////////////////////////////////////////////
@@ -10021,6 +9997,7 @@ if (reversed == null) { reversed = false; }
 				}, 500);
 				clearInterval(myinterval);
 				mygame[qnum][0][3]++;
+				
 				qtick = false; //ביטול מקלדת וטיקר של בדיקה
 		
 				/////////////////////////////////////////
@@ -10093,10 +10070,10 @@ if (reversed == null) { reversed = false; }
 				//התקדמות רקע
 				createjs.Tween.get(bg).to({
 					y: bg.y + (9010 / mygame.length)
-				}, 1500);
+				}, 1500).call(mymashov);
 		
 				//קריאה לאחר האנימציות לכפתור
-				var wait = setTimeout(mymashov, 1500);
+				//var wait = setTimeout(mymashov, 1500);
 			}
 		
 			////////////////////////////////////////////
@@ -10105,7 +10082,6 @@ if (reversed == null) { reversed = false; }
 		
 			function wrongA() {
 				wrong++;
-				mygame[qnum][0][2] = trys; //עדכון- איזה מספר ניסיון מענה זה
 				//אנימצית אי הצלחה
 				boni.gotoAndStop(2);
 				//קריאה לאחר האנימציה לכפתור
@@ -10119,8 +10095,7 @@ if (reversed == null) { reversed = false; }
 			function mymashov() {
 				//עצירת אנימציה
 				prog.progBoni.gotoAndStop(0);
-				//עדכון מונה הנסיונות
-				trys++
+		
 				//כפתור
 				var mashov = new lib.conBtn();
 				mashov.x = 690;
@@ -10137,6 +10112,9 @@ if (reversed == null) { reversed = false; }
 			/////////////////////////////////
 		
 			function next() {
+				//עדכון מה היו השאלות האחרונות
+				wrong2 = wrong1;
+				wrong1 = qnum;
 				//מחיקת הכפתור
 				stage.removeChild(stage.getChildByName("usertime"))
 		
@@ -10244,9 +10222,9 @@ if (reversed == null) { reversed = false; }
 				createjs.Tween.get(endani).wait(1000).to({
 					y: 0,
 					alpha: 1
-				}, 1000);
+				}, 1000).wait(2000).call(keepani);
 		
-				var anitime = setTimeout(keepani, 3000)
+				//var anitime = setTimeout(keepani, 3000)
 				stage.setChildIndex(soundbtn, stage.numChildren - 1);
 		
 			}
@@ -10311,7 +10289,7 @@ if (reversed == null) { reversed = false; }
 					endGame.usert.text += "0";
 				endGame.usert.text += totaltime % 60
 		
-				endGame.users.text = "הציון שלך: " + Math.round(myscore * 100) / 100;
+				endGame.users.text = "הציון שלך: " + Math.round(myscore);
 				endGame.usertry.text = "טעויות: " + wrong;
 		
 			}
@@ -10356,7 +10334,7 @@ if (reversed == null) { reversed = false; }
 			//............זמנים............
 			///////////////////////////////
 		
-			function again(event) {
+			function again(evant) {
 				if (qtick == true) { //אם זה זמן מענה- אין משוב על הבמה
 					mytime--;
 					//הגדרת מראה השעון
@@ -10407,7 +10385,6 @@ if (reversed == null) { reversed = false; }
 			function back() {
 				qtick = false; //ביטול מקלדת וטיקר של בדיקה
 				qtime = 0; //איפוס מונה זמן ללא אינטראקציה
-				mygame[qnum][0][2] = trys; //עדכון שהשאלה הורגלה- כדי שלא תוגרל ב2 הניסיונות הבאית
 				stage.removeChild(stage.getChildByName("stopme")); //מחיקת המשוב
 				//אנימציות יציאה
 				next();
@@ -10419,7 +10396,6 @@ if (reversed == null) { reversed = false; }
 		
 			function tolate() {
 				//הוספה למדידת הטעויות
-				trys++;
 				wrong++;
 				mygame[qnum][0][3]++;
 				instructions.insTxt.alpha = 0;
@@ -10538,45 +10514,44 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/apollo148722_640.jpg?1611906818821", id:"apollo148722_640"},
-		{src:"images/Bitmap12.png?1611906818821", id:"Bitmap12"},
-		{src:"images/Bitmap13.png?1611906818821", id:"Bitmap13"},
-		{src:"images/Bitmap14.png?1611906818821", id:"Bitmap14"},
-		{src:"images/Bitmap15.png?1611906818821", id:"Bitmap15"},
-		{src:"images/Bitmap16.png?1611906818821", id:"Bitmap16"},
-		{src:"images/Bitmap17.png?1611906818821", id:"Bitmap17"},
-		{src:"images/Bitmap18.png?1611906818821", id:"Bitmap18"},
-		{src:"images/Bitmap20.png?1611906818821", id:"Bitmap20"},
-		{src:"images/Bitmap21.png?1611906818821", id:"Bitmap21"},
-		{src:"images/Bitmap22.png?1611906818821", id:"Bitmap22"},
-		{src:"images/Bitmap23.png?1611906818821", id:"Bitmap23"},
-		{src:"images/Bitmap28.png?1611906818821", id:"Bitmap28"},
-		{src:"images/Bitmap29.png?1611906818821", id:"Bitmap29"},
-		{src:"images/Bitmap35.png?1611906818821", id:"Bitmap35"},
-		{src:"images/Bitmap39.png?1611906818821", id:"Bitmap39"},
-		{src:"images/Bitmap40.png?1611906818821", id:"Bitmap40"},
-		{src:"images/Bitmap41.png?1611906818821", id:"Bitmap41"},
-		{src:"images/Bitmap42.png?1611906818821", id:"Bitmap42"},
-		{src:"images/Bitmap43.png?1611906818821", id:"Bitmap43"},
-		{src:"images/Bitmap44.png?1611906818821", id:"Bitmap44"},
-		{src:"images/Bitmap45.png?1611906818821", id:"Bitmap45"},
-		{src:"images/Bitmap46.png?1611906818821", id:"Bitmap46"},
-		{src:"images/Bitmap47.png?1611906818821", id:"Bitmap47"},
-		{src:"images/flag40724_640.png?1611906818821", id:"flag40724_640"},
-		{src:"images/fruit5004282_640.jpg?1611906818821", id:"fruit5004282_640"},
-		{src:"images/microwave29056_640.png?1611906818821", id:"microwave29056_640"},
-		{src:"images/pier569314_640.jpg?1611906818821", id:"pier569314_640"},
-		{src:"images/shutterstock_672353038.jpg?1611906818821", id:"shutterstock_672353038"},
-		{src:"sounds/fallmp3.mp3?1611906818821", id:"fallmp3"},
-		{src:"sounds/high5wav.mp3?1611906818821", id:"high5wav"},
-		{src:"sounds/musicmp3.mp3?1611906818821", id:"musicmp3"},
-		{src:"sounds/rockswav.mp3?1611906818821", id:"rockswav"},
-		{src:"sounds/ropewav.mp3?1611906818821", id:"ropewav"},
-		{src:"sounds/uhohwav.mp3?1611906818821", id:"uhohwav"},
-		{src:"sounds/yaywav.mp3?1611906818821", id:"yaywav"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1611906818821", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1611906818821", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1611906818821", id:"an.ComboBox"}
+		{src:"images/apollo148722_640.jpg?1612288393397", id:"apollo148722_640"},
+		{src:"images/Bitmap12.png?1612288393397", id:"Bitmap12"},
+		{src:"images/Bitmap13.png?1612288393397", id:"Bitmap13"},
+		{src:"images/Bitmap14.png?1612288393397", id:"Bitmap14"},
+		{src:"images/Bitmap15.png?1612288393397", id:"Bitmap15"},
+		{src:"images/Bitmap16.png?1612288393397", id:"Bitmap16"},
+		{src:"images/Bitmap17.png?1612288393397", id:"Bitmap17"},
+		{src:"images/Bitmap18.png?1612288393397", id:"Bitmap18"},
+		{src:"images/Bitmap20.png?1612288393397", id:"Bitmap20"},
+		{src:"images/Bitmap21.png?1612288393397", id:"Bitmap21"},
+		{src:"images/Bitmap22.png?1612288393397", id:"Bitmap22"},
+		{src:"images/Bitmap23.png?1612288393397", id:"Bitmap23"},
+		{src:"images/Bitmap28.png?1612288393397", id:"Bitmap28"},
+		{src:"images/Bitmap29.png?1612288393397", id:"Bitmap29"},
+		{src:"images/Bitmap35.png?1612288393397", id:"Bitmap35"},
+		{src:"images/Bitmap39.png?1612288393397", id:"Bitmap39"},
+		{src:"images/Bitmap40.png?1612288393397", id:"Bitmap40"},
+		{src:"images/Bitmap41.png?1612288393397", id:"Bitmap41"},
+		{src:"images/Bitmap42.png?1612288393397", id:"Bitmap42"},
+		{src:"images/Bitmap43.png?1612288393397", id:"Bitmap43"},
+		{src:"images/Bitmap44.png?1612288393397", id:"Bitmap44"},
+		{src:"images/Bitmap45.png?1612288393397", id:"Bitmap45"},
+		{src:"images/Bitmap46.png?1612288393397", id:"Bitmap46"},
+		{src:"images/Bitmap47.png?1612288393397", id:"Bitmap47"},
+		{src:"images/flag40724_640.png?1612288393397", id:"flag40724_640"},
+		{src:"images/fruit5004282_640.jpg?1612288393397", id:"fruit5004282_640"},
+		{src:"images/microwave29056_640.png?1612288393397", id:"microwave29056_640"},
+		{src:"images/pier569314_640.jpg?1612288393397", id:"pier569314_640"},
+		{src:"sounds/fallmp3.mp3?1612288393397", id:"fallmp3"},
+		{src:"sounds/high5wav.mp3?1612288393397", id:"high5wav"},
+		{src:"sounds/musicmp3.mp3?1612288393397", id:"musicmp3"},
+		{src:"sounds/rockswav.mp3?1612288393397", id:"rockswav"},
+		{src:"sounds/ropewav.mp3?1612288393397", id:"ropewav"},
+		{src:"sounds/uhohwav.mp3?1612288393397", id:"uhohwav"},
+		{src:"sounds/yaywav.mp3?1612288393397", id:"yaywav"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1612288393397", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1612288393397", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1612288393397", id:"an.ComboBox"}
 	],
 	preloads: []
 };

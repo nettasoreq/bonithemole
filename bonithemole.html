@@ -13,9 +13,6 @@
 <meta name="authoring-tool" content="Adobe_Animate_CC">
 <title>bonithemole</title>
 <!-- write your code here -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
-
 <style>
   #animation_container {
 	position:absolute;
@@ -77,7 +74,7 @@ function isFontAvailable(font, obj) {
 </script>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Alef:700&subset=latin">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Mono:600&subset=latin">
-<script src="bonithemole.js?1612288393448"></script>
+<script src="bonithemole.js?1612354826763"></script>
 <script>
 var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
 function init() {
@@ -100,7 +97,6 @@ function init() {
 		}
 	} catch(e) {};
 	var loader = new createjs.LoadQueue(false);
-	loader.installPlugin(createjs.Sound);
 	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
 	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
 	var lib=comp.getLibrary();
@@ -132,8 +128,6 @@ function handleComplete(evt,comp) {
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
-function playSound(id, loop, offset) {
-	return createjs.Sound.play(id, {'interrupt':createjs.Sound.INTERRUPT_EARLY, 'loop': loop, 'offset': offset});}
 </script>
 <!-- write your code here -->
 </head>

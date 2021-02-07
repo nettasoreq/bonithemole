@@ -2793,7 +2793,6 @@ if (reversed == null) { reversed = false; }
 		var self = this;
 		self.cursor = "pointer";
 		self.btnT.font="bold 28px Alef"
-		self.addEventListener("rollover",self.gotoAndStop(1))
 	}
 
 	// actions tween:
@@ -7670,7 +7669,7 @@ if (reversed == null) { reversed = false; }
 
 	this.shape_7 = new cjs.Shape();
 	this.shape_7.graphics.f("#89AB3B").s().p("EAAAAnNMg9jADzMAAAhV/MB7HAAAMAAABV/g");
-	this.shape_7.setTransform(-0.2181,70.425,0.7828,1);
+	this.shape_7.setTransform(-0.2286,70.425,0.7828,1);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_7},{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape},{t:this.reBtn},{t:this.users},{t:this.usert},{t:this.usertry},{t:this.endBtn},{t:this.userH}]}).wait(1));
 
@@ -7772,7 +7771,7 @@ if (reversed == null) { reversed = false; }
 	this.frame_14 = function() {
 		var self=this;
 		self.stop();
-		
+		self.cursor="pointer";
 		self.btnT.font="bold 28px Alef";
 		self.addEventListener("rollover",nextF);
 		function nextF(){
@@ -7782,8 +7781,8 @@ if (reversed == null) { reversed = false; }
 	this.frame_15 = function() {
 		var self = this;
 		this.stop();
-		
-		self.btnT.font="bold 28px Alef"
+		self.cursor="pointer";
+		self.btnT.font="bold 28px Alef";
 		self.addEventListener("rollout",preF);
 		function preF(){
 			self.gotoAndStop(14);
@@ -7845,14 +7844,14 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_2
 	this.instance = new lib.Symbol3();
-	this.instance.setTransform(-2.85,-0.6,0.6913,0.6913,0,0,0,84.5,36.1);
+	this.instance.setTransform(-2.8,-0.6,0.6913,0.6913,0,0,0,84.5,36.1);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:88.1,regY:36.5,scaleX:0.7151,scaleY:0.7151,x:-0.2,y:-0.25},0).wait(1).to({scaleX:0.7388,scaleY:0.7388,x:-0.1},0).wait(1).to({scaleX:0.7626,scaleY:0.7626,x:0,y:-0.2},0).wait(1).to({scaleX:0.7863,scaleY:0.7863,x:0.05},0).wait(1).to({scaleX:0.8101,scaleY:0.8101,x:0.15,y:-0.15},0).wait(1).to({scaleX:0.8338,scaleY:0.8338,x:0.25,y:-0.1},0).wait(1).to({scaleX:0.8576,scaleY:0.8576,x:0.4},0).wait(1).to({scaleX:0.8813,scaleY:0.8813,x:0.5},0).wait(1).to({scaleX:0.905,scaleY:0.905,x:0.6,y:0},0).wait(1).to({scaleX:0.9288,scaleY:0.9288,x:0.65},0).wait(1).to({scaleX:0.9525,scaleY:0.9525,x:0.75},0).wait(1).to({scaleX:0.9763,scaleY:0.9763,x:0.85,y:0.05},0).wait(1).to({scaleX:1,scaleY:1,x:1,y:0.1},0).to({_off:true},1).wait(2));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1).to({regX:88.1,regY:36.5,scaleX:0.7151,scaleY:0.7151,x:-0.15,y:-0.25},0).wait(1).to({scaleX:0.7388,scaleY:0.7388,x:-0.05},0).wait(1).to({scaleX:0.7626,scaleY:0.7626,x:0.05,y:-0.2},0).wait(1).to({scaleX:0.7863,scaleY:0.7863,x:0.1},0).wait(1).to({scaleX:0.8101,scaleY:0.8101,x:0.25,y:-0.15},0).wait(1).to({scaleX:0.8338,scaleY:0.8338,x:0.35,y:-0.1},0).wait(1).to({scaleX:0.8576,scaleY:0.8576,x:0.45},0).wait(1).to({scaleX:0.8813,scaleY:0.8813,x:0.55},0).wait(1).to({scaleX:0.905,scaleY:0.905,x:0.65,y:0},0).wait(1).to({scaleX:0.9288,scaleY:0.9288,x:0.75},0).wait(1).to({scaleX:0.9525,scaleY:0.9525,x:0.85},0).wait(1).to({scaleX:0.9763,scaleY:0.9763,x:0.95,y:0.05},0).wait(1).to({scaleX:1,scaleY:1,x:1.05,y:0.1},0).to({_off:true},1).wait(2));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-88.1,-36.4,177.3,72.9);
+p.nominalBounds = new cjs.Rectangle(-88.1,-36.4,177.39999999999998,72.9);
 
 
 (lib.boni = function(mode,startPosition,loop,reversed) {
@@ -9169,8 +9168,7 @@ if (reversed == null) { reversed = false; }
 		////////////////////////////////////
 		
 		
-		//initL(); //הטעמת סאונד בקובץ אנימייט לוקאלי
-		initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
+		
 		
 		function initL() { //קובץ לוקאלי
 			//לטעון את הסאונד - נתיב + שם
@@ -9295,6 +9293,11 @@ if (reversed == null) { reversed = false; }
 		
 		//בעת שינוי ערך בקומבו
 		function mycb_change(evt) {
+			///////////////////////////////////////////////////////////////
+			//בגלל שאי אפשר להכניס סאונד ללא מחווה- הטמעת סאונד לאחר לחיצה
+			
+			//initL(); //הטעמת סאונד בקובץ אנימייט לוקאלי
+			initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
 			var startframe = stage.getChildByName("startframe");
 			//שמירת הערך שנבחר בקומבו
 		
@@ -9324,7 +9327,7 @@ if (reversed == null) { reversed = false; }
 			mymusic.volume = 0;
 			createjs.Tween.get(mymusic).to({
 				volume: 0.2
-			}, 2000).wait(9000).call(startanimation);
+			}, 2000);
 		
 		
 			stage.getChildByName("startframe").gotoAndPlay(1);
@@ -9336,7 +9339,7 @@ if (reversed == null) { reversed = false; }
 			}
 		
 		
-			//var startani = setTimeout(startanimation, 11000)
+			var startani = setTimeout(startanimation, 11000)
 		
 		}
 		
@@ -9361,7 +9364,7 @@ if (reversed == null) { reversed = false; }
 		
 				//מבנה השאלה
 				//..[0].....[1].......[2]........[3].............[4]
-				//[זמן למענה, האם נענתה נכון, מתי נענתה, סוג שאלה, השאלה]
+				//[זמן למענה,האם נענתה נכון, מספר נסיונות,תמונה,טקסט]
 				//שאלה המכילה תמונה יש מערך- טקסט, תמונה
 				//מבנה המסיח
 				//.[0].......[1]...........[2]..................[3]
@@ -9369,14 +9372,14 @@ if (reversed == null) { reversed = false; }
 		
 				mygame = [
 					[
-						["בסלסלת הפירות יש 10 תפוחים, שי לקח 2 תפוחים ולאחר מכן דן לקח פי 2 תפוחים משי, כמה תפוחים נשארו בסלסלה?", lib.mathQ0, 0, 0, false, 30],
+						["בסלסלת הפירות יש 10 תפוחים, שי לקח 2 תפוחים ולאחר מכן דן לקח פי 2 תפוחים משי, כמה תפוחים נשארו בסלסלה?", lib.mathQ0, 0, false, 30],
 						["5 תפוחים כי שי לקח 2 ודן לקח 3", "text", false, false],
 						["6 תפוחים כי דן לקח 4 ושי 2", "text", false, false],
 						[lib.mathQ0_2, "img", false, true]
 		
 					],
 					[
-						["שירה והילה טיילו בגינה ומצאו פרח יפה. שירה והילה מתלבטות האם יש לפרח יותר עלים בצבע תכלת או בצבע לבן", lib.mathQ1, 0, 0, false, 30],
+						["שירה והילה טיילו בגינה ומצאו פרח יפה. שירה והילה מתלבטות האם יש לפרח יותר עלים בצבע תכלת או בצבע לבן", lib.mathQ1, 0, false, 30],
 						["חצי מהעלים של הפרח בצבע תכלת וחצי מהעלים בצבע לבן", "text", false, true],
 						["יותר מחצי מהעלים של הפרח בצבע תכלת", "text", false, false],
 						["יותר מחצי מהעלים של הפרח בצבע לבן", "text", false, false],
@@ -9384,7 +9387,7 @@ if (reversed == null) { reversed = false; }
 						["שלושה רבעים מהעלים של הפרח בצבע לבן", "text", false, false]
 					],
 					[
-						["הדס צבעה 1/4 מהלבבות באדום ו1/8 מהלבבות בתכלת. שקד צבע 1/2 מהלבבות באדום ו1/8 מהלבבות בתכלת. מה הציור של הדס?", lib.mathQ2, 0, 0, false, 30],
+						["הדס צבעה 1/4 מהלבבות באדום ו1/8 מהלבבות בתכלת. שקד צבע 1/2 מהלבבות באדום ו1/8 מהלבבות בתכלת. מה הציור של הדס?", lib.mathQ2, 0, false, 30],
 						["הציור של הדס לא מופיע בין הציורים שמופיעים בתמונות", "text", false, false],
 						[lib.mathQ2_1, "img", false, true],
 						[lib.mathQ2_2, "img", false, false],
@@ -9392,43 +9395,43 @@ if (reversed == null) { reversed = false; }
 						[lib.mathQ2_4, "img", false, false]
 					],
 					[
-						["לרועי יש פי 3 יותר סוכריות מלשגיא , לשגיא יש 9 סוכריות, כמה סוכריות יש לרועי? ", lib.mathQ3, 0, 0, false, 20],
+						["לרועי יש פי 3 יותר סוכריות מלשגיא , לשגיא יש 9 סוכריות, כמה סוכריות יש לרועי? ", lib.mathQ3, 0, false, 20],
 						["27", "text", false, true],
 						["18", "text", false, false],
 						["32", "text", false, false],
 						["35", "text", false, false]
 					],
 					[
-						["בעזרת איזה תרגיל ניתן להגיע למספר 36?", "", 0, 0, false, 20],
+						["בעזרת איזה תרגיל ניתן להגיע למספר 36?", "", 0, false, 20],
 						["6X6", "text", false, true],
 						["7+9", "text", false, false],
 						["12+43", "text", false, false],
 						["52-8", "text", false, false]
 					],
 					[
-						["בספריית בית הספר יש 10 ספרי הרפתקאות, כל ספר עולה 10 שקלים כמה עולים כל הספרים ביחד?", "", 0, 0, false, 30],
+						["בספריית בית הספר יש 10 ספרי הרפתקאות, כל ספר עולה 10 שקלים כמה עולים כל הספרים ביחד?", "", 0, false, 30],
 						["10 ספרים כפול 10 שח =100 שח", "text", false, true],
 						["10 ספרים כפול 10 שח =1000 שח", "text", false, false]
 					],
 					[
-						["9", "", 0, 0, false, 20],
+						["9", "", 0, false, 20],
 						["לא מספר ראשוני", "text", false, true],
 						["מספר ראשוני", "text", false, false]
 					],
 					[
-						["", lib.mathQ7, 0, 0, false, 30],
+						["", lib.mathQ7, 0, false, 30],
 						[lib.mathQ7_0, "img", false, false],
 						[lib.mathQ7_1, "img", false, true],
 						[lib.mathQ7_2, "img", false, false]
 					],
 					[
-						["פי כמה 44 גדול מ4", lib.mathQ8, 0, 0, false, 20],
+						["פי כמה 44 גדול מ4", lib.mathQ8, 0, false, 20],
 						["פי 11", "text", false, true],
 						["פי 4", "text", false, false],
 						["פי 40", "text", false, false]
 					],
 					[
-						["פתרו את התרגיל הבא 20/0 = ?", "", 0, 0, false, 30],
+						["פתרו את התרגיל הבא 20/0 = ?", "", 0, false, 30],
 						["אי אפשר לחלק ב0", "text", false, true],
 						["20", "text", false, false],
 						["0", "text", false, false],
@@ -9446,26 +9449,25 @@ if (reversed == null) { reversed = false; }
 				//מבנה השאלה
 				//..[0].....[1].......[2]........[3].............[4]
 				//[זמן למענה, האם נענתה נכון, מתי נענתה, סוג שאלה, השאלה]
-				//שאלה המכילה תמונה יש מערך- טקסט, תמונה
 				//מבנה המסיח
 				//.[0].......[1]...........[2]..................[3]
 				//[תשובה נכונה או לא, האם מופיע כבר על המסך, סוג מסיח, המסיח]
 		
 				mygame = [
 					[
-						["Firstly, I want to congratulate you all. Secondly, I would like to wish you good luck and ____ I hope you have enjoyed the course", lib.engQ0, 0, 0, false, 30],
+						["Firstly, I want to congratulate you all. Secondly, I would like to wish you good luck and ____ I hope you have enjoyed the course", lib.engQ0, 0, false, 30],
 						["in", "text", false, false],
 						["the", "text", false, false],
 						["end", "text", false, false],
 						["finally", "text", false, true]
 					],
 					[
-						["listen to", "", 0, 0, false, 30],
+						["listen to", "", 0, false, 30],
 						[lib.engQ1_0, "img", false, false],
 						["music", "text", false, true]
 					],
 					[
-						["Who said the following sentence: That's one small step for man, one giant leap for mankind", lib.engQ2, 0, 0, false, 30],
+						["Who said the following sentence: That's one small step for man, one giant leap for mankind", lib.engQ2, 0,false, 30],
 						["Neil Armstrong", "text", false, true],
 						[lib.engQ2_1, "img", false, false],
 						[lib.engQ2_2, "img", false, false],
@@ -9473,13 +9475,13 @@ if (reversed == null) { reversed = false; }
 						["Steven Allen Spielberg when he won his first Oscar", "text", false, false]
 					],
 					[
-						["David Ben-Gurion was", lib.engQ3, 0, 0, false, 30],
+						["David Ben-Gurion was", lib.engQ3, 0, false, 30],
 						["the first national founder of the State of Israel", "text", false, true],
 						["a Jewish poet who wrote primarily in Hebrew", "text", false, false],
 						["American film director, producer, and screenwriter", "text", false, false]
 					],
 					[
-						["", lib.engQ4, 0, 0, false, 30],
+						["", lib.engQ4, 0, false, 30],
 						["That are brown leather coat", "text", false, false],
 						["There is a brown leather coat", "text", false, false],
 						["This an leather brown coat", "text", false, false],
@@ -9487,7 +9489,7 @@ if (reversed == null) { reversed = false; }
 						["That is a brown leather coat", "text", false, true]
 					],
 					[
-						["The Brazilian flag is bright green with a yellow diamond in the center With a blue globe in it", "", 0, 0, false, 30],
+						["The Brazilian flag is bright green with a yellow diamond in the center With a blue globe in it", "", 0, false, 30],
 						[lib.engQ5_0, "img", false, false],
 						[lib.engQ5_1, "img", false, false],
 						[lib.engQ5_2, "img", false, false],
@@ -9495,28 +9497,28 @@ if (reversed == null) { reversed = false; }
 						[lib.engQ5_4, "img", false, true]
 					],
 					[
-						["complete the sentence: I was crying _____ I was sad", "", 0, 0, false, 20],
+						["complete the sentence: I was crying _____ I was sad", "", 0, false, 20],
 						["on account of", "text", false, false],
 						["to", "text", false, false],
 						["because", "text", false, true],
 						["am", "text", false, false]
 					],
 					[
-						["if i want my food to be hot quickly, where should i put it", "", 0, 0, false, 20],
+						["if i want my food to be hot quickly, where should i put it", "", 0, false, 20],
 						[lib.engQ7_0, "img", false, true],
 						["in the refrigerator", "text", false, false],
 						["in the closet", "text", false, false],
 						["in my bed", "text", false, false]
 					],
 					[
-						["color of the sea", lib.engQ8, 0, 0, false, 20],
+						["color of the sea", lib.engQ8, 0, false, 20],
 						["green", "text", false, false],
 						["blue", "text", false, true],
 						["yellow", "text", false, false],
 						["red", "text", false, false]
 					],
 					[
-						["I was very happy _____ in India. I really miss being there", "", 0, 0, false, 20],
+						["I was very happy _____ in India. I really miss being there", "", 0, false, 20],
 						["to has lived", "text", false, false],
 						["to live", "text", false, true],
 						["to be lived", "text", false, false],
@@ -9632,15 +9634,15 @@ if (reversed == null) { reversed = false; }
 				//הגרלת שאלה עד שתצא שאלה שלא נענתה עדיין נכון ושעבר מספיק זמן מאז שהופיעה לאחרונה (אם הופיעה)
 		
 				if (correct == mygame.length - 1) //שאלה אחרונה
-					while (mygame[qnum][0][4] == true)
+					while (mygame[qnum][0][3] == true)
 						qnum = Math.floor((Math.random() * (mygame.length)));
 		
 				else if (correct == mygame.length - 2) //שתי תשובות שלא נענו- להגריל לתשובה השניה
-					while (qnum == wrong1 || mygame[qnum][0][4] == true)
+					while (qnum == wrong1 || mygame[qnum][0][3] == true)
 						qnum = Math.floor((Math.random() * (mygame.length)));
 		
 				else //כל השאלות- לבדוק שהתשובה לא נענתה לאחרונה
-					while (qnum == wrong1 || qnum == wrong2 || mygame[qnum][0][4] == true)
+					while (qnum == wrong1 || qnum == wrong2 || mygame[qnum][0][3] == true)
 						qnum = Math.floor((Math.random() * (mygame.length)));
 		
 				var insTxt = instructions.insTxt;
@@ -9851,7 +9853,7 @@ if (reversed == null) { reversed = false; }
 		
 				/////////////////////////////////////////////////////////
 				//זמן לשאלה- לפי הגדרת השאלה
-				mytime = mygame[qnum][0][5]
+				mytime = mygame[qnum][0][4]
 				//מראה השעון
 				usertime = new lib.time();
 				usertime.name = "usertime";
@@ -9996,7 +9998,7 @@ if (reversed == null) { reversed = false; }
 					alpha: 0
 				}, 500);
 				clearInterval(myinterval);
-				mygame[qnum][0][3]++;
+				mygame[qnum][0][2]++;
 				
 				qtick = false; //ביטול מקלדת וטיקר של בדיקה
 		
@@ -10048,8 +10050,8 @@ if (reversed == null) { reversed = false; }
 		
 			function rightA() {
 				correct++; //הוספת ניקוד
-				mygame[qnum][0][4] = true; //סימון- נענתה נכון
-				myscore += (100 / (mygame.length * mygame[qnum][0][3])); //חישוב ניקוד
+				mygame[qnum][0][3] = true; //סימון- נענתה נכון
+				myscore += (100 / (mygame.length * mygame[qnum][0][2])); //חישוב ניקוד
 		
 				///////////////////////////////////////
 				//אנימציות הצלחה
@@ -10102,7 +10104,6 @@ if (reversed == null) { reversed = false; }
 				mashov.y = 400;
 				mashov.name = "mymashov";
 				stage.addChild(mashov);
-				mashov.cursor = "pointer";
 				//אירוע לחיצה על המשך
 				mashov.addEventListener("click", next);
 			}
@@ -10173,7 +10174,7 @@ if (reversed == null) { reversed = false; }
 				stage.removeChild(stage.getChildByName("quest"))
 				stage.removeChild(boni)
 		
-				totaltime += (mygame[qnum][0][5] - mytime); //זמן כללי
+				totaltime += (mygame[qnum][0][4] - mytime); //זמן כללי
 		
 		
 				//////////////////////////////////////////////////////////
@@ -10233,13 +10234,11 @@ if (reversed == null) { reversed = false; }
 			//////////////////////////////////
 		
 			function keepani() {
+				
 				/////////ניקיון במה  
 				stage.removeChild(instructions);
 				stage.removeChild(bricks);
 				stage.removeChild(prog);
-		
-		
-		
 		
 				var endani = stage.getChildByName("endani")
 				endani.gotoAndPlay(1);
@@ -10397,7 +10396,7 @@ if (reversed == null) { reversed = false; }
 			function tolate() {
 				//הוספה למדידת הטעויות
 				wrong++;
-				mygame[qnum][0][3]++;
+				mygame[qnum][0][2]++;
 				instructions.insTxt.alpha = 0;
 				//ביטול מקלדת וטיקר של בדיקה
 				qtick = false;
@@ -10514,37 +10513,37 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/apollo148722_640.jpg?1612354826640", id:"apollo148722_640"},
-		{src:"images/Bitmap12.png?1612354826640", id:"Bitmap12"},
-		{src:"images/Bitmap13.png?1612354826640", id:"Bitmap13"},
-		{src:"images/Bitmap14.png?1612354826640", id:"Bitmap14"},
-		{src:"images/Bitmap15.png?1612354826640", id:"Bitmap15"},
-		{src:"images/Bitmap16.png?1612354826640", id:"Bitmap16"},
-		{src:"images/Bitmap17.png?1612354826640", id:"Bitmap17"},
-		{src:"images/Bitmap18.png?1612354826640", id:"Bitmap18"},
-		{src:"images/Bitmap20.png?1612354826640", id:"Bitmap20"},
-		{src:"images/Bitmap21.png?1612354826640", id:"Bitmap21"},
-		{src:"images/Bitmap22.png?1612354826640", id:"Bitmap22"},
-		{src:"images/Bitmap23.png?1612354826640", id:"Bitmap23"},
-		{src:"images/Bitmap28.png?1612354826640", id:"Bitmap28"},
-		{src:"images/Bitmap29.png?1612354826640", id:"Bitmap29"},
-		{src:"images/Bitmap35.png?1612354826640", id:"Bitmap35"},
-		{src:"images/Bitmap39.png?1612354826640", id:"Bitmap39"},
-		{src:"images/Bitmap40.png?1612354826640", id:"Bitmap40"},
-		{src:"images/Bitmap41.png?1612354826640", id:"Bitmap41"},
-		{src:"images/Bitmap42.png?1612354826640", id:"Bitmap42"},
-		{src:"images/Bitmap43.png?1612354826640", id:"Bitmap43"},
-		{src:"images/Bitmap44.png?1612354826640", id:"Bitmap44"},
-		{src:"images/Bitmap45.png?1612354826640", id:"Bitmap45"},
-		{src:"images/Bitmap46.png?1612354826640", id:"Bitmap46"},
-		{src:"images/Bitmap47.png?1612354826640", id:"Bitmap47"},
-		{src:"images/flag40724_640.png?1612354826640", id:"flag40724_640"},
-		{src:"images/fruit5004282_640.jpg?1612354826640", id:"fruit5004282_640"},
-		{src:"images/microwave29056_640.png?1612354826640", id:"microwave29056_640"},
-		{src:"images/pier569314_640.jpg?1612354826640", id:"pier569314_640"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1612354826640", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1612354826640", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1612354826640", id:"an.ComboBox"}
+		{src:"images/apollo148722_640.jpg?1612700241006", id:"apollo148722_640"},
+		{src:"images/Bitmap12.png?1612700241006", id:"Bitmap12"},
+		{src:"images/Bitmap13.png?1612700241006", id:"Bitmap13"},
+		{src:"images/Bitmap14.png?1612700241006", id:"Bitmap14"},
+		{src:"images/Bitmap15.png?1612700241006", id:"Bitmap15"},
+		{src:"images/Bitmap16.png?1612700241006", id:"Bitmap16"},
+		{src:"images/Bitmap17.png?1612700241006", id:"Bitmap17"},
+		{src:"images/Bitmap18.png?1612700241006", id:"Bitmap18"},
+		{src:"images/Bitmap20.png?1612700241006", id:"Bitmap20"},
+		{src:"images/Bitmap21.png?1612700241006", id:"Bitmap21"},
+		{src:"images/Bitmap22.png?1612700241006", id:"Bitmap22"},
+		{src:"images/Bitmap23.png?1612700241006", id:"Bitmap23"},
+		{src:"images/Bitmap28.png?1612700241006", id:"Bitmap28"},
+		{src:"images/Bitmap29.png?1612700241006", id:"Bitmap29"},
+		{src:"images/Bitmap35.png?1612700241006", id:"Bitmap35"},
+		{src:"images/Bitmap39.png?1612700241006", id:"Bitmap39"},
+		{src:"images/Bitmap40.png?1612700241006", id:"Bitmap40"},
+		{src:"images/Bitmap41.png?1612700241006", id:"Bitmap41"},
+		{src:"images/Bitmap42.png?1612700241006", id:"Bitmap42"},
+		{src:"images/Bitmap43.png?1612700241006", id:"Bitmap43"},
+		{src:"images/Bitmap44.png?1612700241006", id:"Bitmap44"},
+		{src:"images/Bitmap45.png?1612700241006", id:"Bitmap45"},
+		{src:"images/Bitmap46.png?1612700241006", id:"Bitmap46"},
+		{src:"images/Bitmap47.png?1612700241006", id:"Bitmap47"},
+		{src:"images/flag40724_640.png?1612700241006", id:"flag40724_640"},
+		{src:"images/fruit5004282_640.jpg?1612700241006", id:"fruit5004282_640"},
+		{src:"images/microwave29056_640.png?1612700241006", id:"microwave29056_640"},
+		{src:"images/pier569314_640.jpg?1612700241006", id:"pier569314_640"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1612700241006", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1612700241006", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1612700241006", id:"an.ComboBox"}
 	],
 	preloads: []
 };

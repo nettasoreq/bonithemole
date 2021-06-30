@@ -9168,8 +9168,8 @@ if (reversed == null) { reversed = false; }
 		////////////////////////////////////
 		
 		
-		//initL(); //הטעמת סאונד בקובץ אנימייט לוקאלי
-		initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
+		initL(); //הטעמת סאונד בקובץ אנימייט לוקאלי
+		//initW(); //הטמעת סאונד בקובץ שעולה לגיטהאב
 		
 		function initL() { //קובץ לוקאלי
 			//לטעון את הסאונד - נתיב + שם
@@ -10510,37 +10510,37 @@ lib.properties = {
 	opacity: 1.00,
 	webfonts: {},
 	manifest: [
-		{src:"images/apollo148722_640.jpg?1613028994171", id:"apollo148722_640"},
-		{src:"images/Bitmap12.png?1613028994171", id:"Bitmap12"},
-		{src:"images/Bitmap13.png?1613028994171", id:"Bitmap13"},
-		{src:"images/Bitmap14.png?1613028994171", id:"Bitmap14"},
-		{src:"images/Bitmap15.png?1613028994171", id:"Bitmap15"},
-		{src:"images/Bitmap16.png?1613028994171", id:"Bitmap16"},
-		{src:"images/Bitmap17.png?1613028994171", id:"Bitmap17"},
-		{src:"images/Bitmap18.png?1613028994171", id:"Bitmap18"},
-		{src:"images/Bitmap20.png?1613028994171", id:"Bitmap20"},
-		{src:"images/Bitmap21.png?1613028994171", id:"Bitmap21"},
-		{src:"images/Bitmap22.png?1613028994171", id:"Bitmap22"},
-		{src:"images/Bitmap23.png?1613028994171", id:"Bitmap23"},
-		{src:"images/Bitmap28.png?1613028994171", id:"Bitmap28"},
-		{src:"images/Bitmap29.png?1613028994171", id:"Bitmap29"},
-		{src:"images/Bitmap35.png?1613028994171", id:"Bitmap35"},
-		{src:"images/Bitmap39.png?1613028994171", id:"Bitmap39"},
-		{src:"images/Bitmap40.png?1613028994171", id:"Bitmap40"},
-		{src:"images/Bitmap41.png?1613028994171", id:"Bitmap41"},
-		{src:"images/Bitmap42.png?1613028994171", id:"Bitmap42"},
-		{src:"images/Bitmap43.png?1613028994171", id:"Bitmap43"},
-		{src:"images/Bitmap44.png?1613028994171", id:"Bitmap44"},
-		{src:"images/Bitmap45.png?1613028994171", id:"Bitmap45"},
-		{src:"images/Bitmap46.png?1613028994171", id:"Bitmap46"},
-		{src:"images/Bitmap47.png?1613028994171", id:"Bitmap47"},
-		{src:"images/flag40724_640.png?1613028994171", id:"flag40724_640"},
-		{src:"images/fruit5004282_640.jpg?1613028994171", id:"fruit5004282_640"},
-		{src:"images/microwave29056_640.png?1613028994171", id:"microwave29056_640"},
-		{src:"images/pier569314_640.jpg?1613028994171", id:"pier569314_640"},
-		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1613028994171", id:"lib/jquery-3.4.1.min.js"},
-		{src:"components/sdk/anwidget.js?1613028994171", id:"sdk/anwidget.js"},
-		{src:"components/ui/src/combobox.js?1613028994171", id:"an.ComboBox"}
+		{src:"images/apollo148722_640.jpg?1619545146743", id:"apollo148722_640"},
+		{src:"images/Bitmap12.png?1619545146743", id:"Bitmap12"},
+		{src:"images/Bitmap13.png?1619545146743", id:"Bitmap13"},
+		{src:"images/Bitmap14.png?1619545146743", id:"Bitmap14"},
+		{src:"images/Bitmap15.png?1619545146743", id:"Bitmap15"},
+		{src:"images/Bitmap16.png?1619545146743", id:"Bitmap16"},
+		{src:"images/Bitmap17.png?1619545146743", id:"Bitmap17"},
+		{src:"images/Bitmap18.png?1619545146743", id:"Bitmap18"},
+		{src:"images/Bitmap20.png?1619545146744", id:"Bitmap20"},
+		{src:"images/Bitmap21.png?1619545146744", id:"Bitmap21"},
+		{src:"images/Bitmap22.png?1619545146744", id:"Bitmap22"},
+		{src:"images/Bitmap23.png?1619545146744", id:"Bitmap23"},
+		{src:"images/Bitmap28.png?1619545146744", id:"Bitmap28"},
+		{src:"images/Bitmap29.png?1619545146744", id:"Bitmap29"},
+		{src:"images/Bitmap35.png?1619545146744", id:"Bitmap35"},
+		{src:"images/Bitmap39.png?1619545146744", id:"Bitmap39"},
+		{src:"images/Bitmap40.png?1619545146744", id:"Bitmap40"},
+		{src:"images/Bitmap41.png?1619545146744", id:"Bitmap41"},
+		{src:"images/Bitmap42.png?1619545146744", id:"Bitmap42"},
+		{src:"images/Bitmap43.png?1619545146744", id:"Bitmap43"},
+		{src:"images/Bitmap44.png?1619545146744", id:"Bitmap44"},
+		{src:"images/Bitmap45.png?1619545146744", id:"Bitmap45"},
+		{src:"images/Bitmap46.png?1619545146744", id:"Bitmap46"},
+		{src:"images/Bitmap47.png?1619545146744", id:"Bitmap47"},
+		{src:"images/flag40724_640.png?1619545146744", id:"flag40724_640"},
+		{src:"images/fruit5004282_640.jpg?1619545146744", id:"fruit5004282_640"},
+		{src:"images/microwave29056_640.png?1619545146744", id:"microwave29056_640"},
+		{src:"images/pier569314_640.jpg?1619545146744", id:"pier569314_640"},
+		{src:"https://code.jquery.com/jquery-3.4.1.min.js?1619545146744", id:"lib/jquery-3.4.1.min.js"},
+		{src:"components/sdk/anwidget.js?1619545146744", id:"sdk/anwidget.js"},
+		{src:"components/ui/src/combobox.js?1619545146744", id:"an.ComboBox"}
 	],
 	preloads: []
 };
